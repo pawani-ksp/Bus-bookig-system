@@ -31,7 +31,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         registerButton.setOnClickListener {
-            Toast.makeText(this, "Register button clicked", Toast.LENGTH_SHORT).show()
+            val intent = android.content.Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 }
